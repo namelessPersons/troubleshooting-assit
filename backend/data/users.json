@@ -3,11 +3,6 @@
       "userId": 1,
       "email": "user1@example.com",
       "password": "pass1234"
-<<<<<<< HEAD
-    }
-  ]
-  
-=======
     },
     {
       "userId": 2,
@@ -30,4 +25,3 @@
       "password": "pass1234"
     }
 ]
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78

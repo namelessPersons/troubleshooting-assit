@@ -1,18 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const pdfService = require('../services/pdfService');
-<<<<<<< HEAD
-=======
-const PdfPrinter = require('pdfmake');
-const fonts = {
-  Roboto: {
-    normal: path.join(__dirname, '../../fonts/NotoSans-VariableFont_wdth,wght.ttf'),
-    bold: path.join(__dirname, '../../fonts/NotoSans-VariableFont_wdth,wght.ttf'),
-    italics: path.join(__dirname, '../../fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf'),
-    bolditalics: path.join(__dirname, '../../fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf')
-  }
-};
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
 
 
 const wiFile = path.join(__dirname, '../data/workInstructions.json');
@@ -100,12 +88,7 @@ exports.remove = (req, res) => {
     fs.writeFileSync(wiFile, JSON.stringify(workInstructions, null, 2));
     res.json({ success: true });
   };
-<<<<<<< HEAD
   
-=======
-// backend/controllers/workInstructionController.js
-
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
 exports.exportPdf = async (req, res) => {
   const userId = req.session.user?.userId;
   if (!userId) {
@@ -132,8 +115,4 @@ exports.exportPdf = async (req, res) => {
     console.error(err);
     res.status(500).json({ error: 'Failed to generate PDF' });
   }
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78

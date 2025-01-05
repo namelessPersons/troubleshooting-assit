@@ -20,18 +20,6 @@ export async function askDocument(params) {
   return res.json();
 }
 
-<<<<<<< HEAD
-=======
-export async function searchDocuments(model, serial) {
-  const url = `${API_BASE}/api/documents/search?model=${encodeURIComponent(model)}&serial=${encodeURIComponent(serial)}`;
-  const res = await fetch(url, {
-    method: 'GET',
-    credentials: 'include'
-  });
-  return res.json();
-}
-
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
 export async function listWorkInstructions() {
   const res = await fetch(`${API_BASE}/api/workinstructions`, {
     method: 'GET',
@@ -62,7 +50,6 @@ export async function deleteWorkInstruction(workInstructionId) {
   return res.json();
 }
 
-<<<<<<< HEAD
 export async function generatePdf(workInstructionId) {
   const res = await fetch(`${API_BASE}/api/workinstructions/${workInstructionId}/pdf`, {
     method: 'POST',
@@ -74,14 +61,6 @@ export async function generatePdf(workInstructionId) {
 export async function searchDocuments(model, serial) {
   const res = await fetch(`${API_BASE}/api/documents/search?model=${model}&serial=${serial}`, {
     method: 'GET',
-=======
-// ★ summarizeText API (POST /api/summarize)
-export async function summarizeText(text) {
-  const res = await fetch(`${API_BASE}/api/summarize`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ text }),
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
     credentials: 'include'
   });
   return res.json();

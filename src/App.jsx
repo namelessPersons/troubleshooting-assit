@@ -3,10 +3,6 @@ import LoginForm from './components/LoginForm';
 import DocumentSearch from './components/DocumentSearch';
 import DocumentQA from './components/DocumentQA';
 import WorkInstructionEdit from './components/WorkInstructionEdit';
-<<<<<<< HEAD
-=======
-
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
 import {
   listWorkInstructions,
   saveWorkInstruction,
@@ -116,11 +112,7 @@ export default function App() {
         ))}
       </div>
 
-<<<<<<< HEAD
       {/* 中央 QAエリア */}
-=======
-      {/* 中央エリア: Document Search & QA */}
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
       <div
         style={{
           flex: 1,

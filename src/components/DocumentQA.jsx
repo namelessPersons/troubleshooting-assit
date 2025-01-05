@@ -1,21 +1,13 @@
 import React, { useState, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-<<<<<<< HEAD
 import { askDocument } from '../../src/services/api';
-=======
-import { askDocument } from '../services/api';
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
 
 function handleAutoScroll(e, containerRef) {
   if (!containerRef.current) return;
   const container = containerRef.current;
   const rect = container.getBoundingClientRect();
   const mouseY = e.clientY;
-<<<<<<< HEAD
-=======
-
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
   const topThreshold = rect.top + 50;
   const bottomThreshold = rect.bottom - 50;
   const scrollSpeed = 5;
@@ -48,7 +40,6 @@ export default function DocumentQA({ currentDocNumber }) {
     }
   };
 
-<<<<<<< HEAD
   const handleDragStartAnswer = (e, content) => {
     // GPT要約の「title」 は後で WorkInstruction側で summarizeText() する場合もある
     // ここでは originalText に 'content' を入れ、 sourceType='ANSWER'
@@ -72,25 +63,6 @@ export default function DocumentQA({ currentDocNumber }) {
     // originalText = content
     const payload = { text: content };
     e.dataTransfer.setData('application/json', JSON.stringify(payload));
-=======
-  // ドラッグ開始 (Answer)
-  const handleDragStartAnswer = (e, para) => {
-    // originalTextとして要約対象の全文(para)をセット
-    const obj = {
-      text: para,
-      sourceType: 'ANSWER'
-    };
-    e.dataTransfer.setData('application/json', JSON.stringify(obj));
-  };
-
-  // ドラッグ開始 (Page)
-  const handleDragStartPage = (e, content) => {
-    const obj = {
-      text: content,
-      sourceType: 'PAGE'
-    };
-    e.dataTransfer.setData('application/json', JSON.stringify(obj));
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
   };
 
   const handleDragOver = (e) => {
@@ -124,11 +96,7 @@ export default function DocumentQA({ currentDocNumber }) {
         <div
           key={i}
           draggable
-<<<<<<< HEAD
           onDragStart={(e) => handleDragStartAnswer(e, para)}
-=======
-          onDragStart={e => handleDragStartAnswer(e, para)}
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
           style={{ border: '1px solid #ccc', margin: '4px 0', padding: '4px' }}
         >
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
@@ -144,11 +112,7 @@ export default function DocumentQA({ currentDocNumber }) {
           <div
             key={i}
             draggable
-<<<<<<< HEAD
             onDragStart={(e) => handleDragStartPage(e, content)}
-=======
-            onDragStart={e => handleDragStartPage(e, content)}
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
             style={{ border: '1px solid #ccc', margin: '4px 0', padding: '4px' }}
           >
             {content}
@@ -157,8 +121,4 @@ export default function DocumentQA({ currentDocNumber }) {
       })}
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
