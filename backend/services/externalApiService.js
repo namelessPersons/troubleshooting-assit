@@ -51,7 +51,7 @@ exports.summarizeText = async (originalText) => {
     // "model": "GPT4o-mini" を指定
     // promptとして「20文字以内に要約して」という指示を送る
     const prompt = `Summarize the following text in 20 English characters or fewer:\n\n${originalText}`;
-  
+    console.log(prompt)
     const response = await fetch(ENDPOINT_GPT_SUMMARY, {
       method: 'POST',
       headers: {
@@ -67,6 +67,7 @@ exports.summarizeText = async (originalText) => {
         temperature: 0.7
       })
     });
+    console.log(response)
   
     if (!response.ok) {
       const text = await response.text();
