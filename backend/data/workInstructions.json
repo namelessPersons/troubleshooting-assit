@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "title": "Sample",
+    "date": "2024-12-01",
+    "assignment": "John",
+    "jobs": [
+      {
+        "id": 1735558232730,
+        "jobName": "test",
+        "items": [
+          {
+            "id": "item-1735558256317",
+            "title": "Check F/R, brake, fuses, battery.",
+            "originalText": "### Related Information to Check Before Troubleshooting\n1. **F/R Lever**: Ensure it is in the Neutral (N) position.\n2. **Brake Pedal**: Confirm that the brake pedal is depressed.\n3. **Fuses**: Check that the fuse or slow blow fuse is not broken. If broken, inspect the related wiring harness for ground faults.\n4. **Battery Connection**: Verify that the battery cables are connected properly.",
+            "sourceType": "ANSWER",
+<<<<<<< HEAD
+            "category": "",
+            "comment": ""
+=======
+            "category": "Troubleshooting",
+            "comment": "test comment 1"
+>>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
+          },
+          {
+            "id": "item-1735558270185",
+            "title": "[315] Electrical system (E-mode) gas engine",
+            "originalText": "",
+            "sourceType": "PAGE",
+<<<<<<< HEAD
+=======
+            "category": "Repair procedure",
+            "comment": "test comment 2"
+          },
+          {
+            "id": 1735618485372,
+            "title": "Check F/R lever, brake, fuses, battery.",
+            "originalText": "## Related Information \nBefore proceeding with troubleshooting, ensure the following conditions are met:\n- **F/R lever is in N (neutral) position.**\n- **Brake pedal is depressed.**\n- **Fuses (including slow blow fuses) are intact** (If broken, check the related wiring harness for ground faults).\n- **Battery cable is connected** to the battery.",
+            "sourceType": "ANSWER",
+            "category": "",
+            "comment": ""
+          },
+          {
+            "id": 1735618492509,
+            "title": "Defective battery specs.",
+            "originalText": "## Possible Causes and Standard Values\n### 1. Defective Battery\n- **Specific Gravity**: Minimum of 1.26\n- **Voltage**: Minimum of 12 V",
+            "sourceType": "ANSWER",
+>>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
+            "category": "",
+            "comment": ""
+          }
+        ]
+      },
+      {
+<<<<<<< HEAD
+        "id": 1736004790821,
+        "jobName": "",
+        "items": [
+          {
+            "id": "item-1736004808362",
+            "title": "Manual organized by sections.",
+            "originalText": "2. **Structure of the Manual**: The manual is organized into various sections for ease of understanding.",
+            "sourceType": "ANSWER",
+            "category": "",
+            "comment": ""
+          },
+          {
+            "id": "item-1736004801699",
+            "title": "Workshop service guide.",
+            "originalText": "1. **Purpose of the Manual**: This shop manual provides essential technical information for services performed in a workshop.",
+            "sourceType": "ANSWER",
+            "category": "",
+            "comment": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "title": "Sample 2",
+    "date": "",
+    "assignment": "",
+    "jobs": []
+=======
+        "id": 1735564034515,
+        "jobName": "test 2",
+        "items": [
+          {
+            "id": "item-1735564069353",
+            "title": "Check motor for defects.",
+            "originalText": "4. **Defective Starting Motor**\n   - Prepare with the starting switch OFF and perform troubleshooting without turning the starting switch ON. \n   - Check the following resistances and voltages:\n     - Between STARTING MOTOR (E) and ground: Maximum resistance of 1 Ω.\n     - Between STARTING MOTOR (B) and ground: Voltage should be between 10 and 15 V.\n     - Between STARTING MOTOR (S) and ground: Voltage should be between 10 and 15 V.\n   - If troubleshooting results are normal and the motor does not rotate, the starting motor is defective.",
+            "sourceType": "ANSWER",
+            "category": "Troubleshooting",
+            "comment": "test comment 3"
+          },
+          {
+            "id": "item-1735564074065",
+            "title": "Safety first: secure vehicle.",
+            "originalText": "### Safety Information\n- Always ensure that the vehicle is stationary and safely secured before performing any electrical diagnostics.\n- Disconnect the battery before performing any wiring checks to avoid electrical shock or short-circuits.",
+            "sourceType": "ANSWER",
+            "category": "Repair procedure",
+            "comment": "test comment 4"
+          }
+        ]
+      },
+      {
+        "id": 1735612721893,
+        "jobName": "",
+        "items": []
+      }
+    ]
+>>>>>>> 0a3ece7dd8a18799220074b57f41336df0f05e78
+  }
+]

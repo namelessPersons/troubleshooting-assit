@@ -1,0 +1,17 @@
+[
+    {
+      "docNumber": "SM207",
+      "title": "Shop Manual for PC210-11",
+      "targetModel": "PC210",
+      "targetSerialRange": "1000-9999",
+      "pdfPath": "/pdf/SM207.pdf"
+    },
+    {
+      "docNumber": "SM999",
+      "title": "Shop Manual for PC200-8",
+      "targetModel": "PC200",
+      "targetSerialRange": "2000-3000",
+      "pdfPath": "/pdf/SM999.pdf"
+    }
+  ]
+  

@@ -1,0 +1,20 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #root {
+    /* 全画面の高さを使い、縦方向のflexを可能に */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Appコンポーネント全体 */
+  .app-container {
+    flex: 1;               /* 余ったスペースを埋める */
+    display: flex;         /* 横方向に3カラム */
+    overflow: hidden;      /* 横並び時にオーバーフロー隠す */
+  }
+  
