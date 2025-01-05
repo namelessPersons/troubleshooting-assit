@@ -7,21 +7,21 @@
     {
       "userId": 2,
       "email": "yasutaka_nalaizumi@global.komatsu",
-      "password": "pass1234"
+      "password": "test"
     },
     {
       "userId": 3,
       "email": "daisuke_kigure@global.komatsu",
-      "password": "pass1234"
+      "password": "test"
     },
     {
       "userId": 4,
       "email": "takefumi_sato@global.komatsu",
-      "password": "pass1234"
+      "password": "test"
     },
     {
       "userId": 5,
       "email": "genki_yamaguchi@global.komatsu",
-      "password": "pass1234"
+      "password": "test"
     }
 ]
