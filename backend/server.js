@@ -6,6 +6,7 @@ const session = require('cookie-session');
 const authRoutes = require('./routes/auth');
 const docRoutes = require('./routes/documents');
 const wiRoutes = require('./routes/workinstructions');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
