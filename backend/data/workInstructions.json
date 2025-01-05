@@ -25,6 +25,14 @@
             "sourceType": "PAGE",
             "category": "",
             "comment": ""
+          },
+          {
+            "id": "item-1736059271594",
+            "title": "Check F/R, brakes, fuses, battery.",
+            "originalText": "## Related Information to Check Before Troubleshooting\n1. **F/R Lever Position**: Ensure the Forward/Reverse lever is in the Neutral (N) position.\n2. **Brake Pedal**: Verify that the brake pedal is depressed.\n3. **Fuses**: Check if any fuses, specifically a slow-blow fuse, are broken. If a fuse is found broken, inspect the related wiring harness for ground faults.\n4. **Battery Connection**: Make sure the battery cable is connected and not disconnected from the battery.",
+            "sourceType": "ANSWER",
+            "category": "",
+            "comment": ""
           }
         ]
       },

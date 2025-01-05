@@ -87,7 +87,7 @@ export default function DocumentQA({ currentDocNumber }) {
         value={question}
         onChange={e => setQuestion(e.target.value)}
         placeholder="Ask question here..."
-        style={{ width: '100%', marginBottom: '8px' }}
+        style={{ width: '100%', marginBottom: '8px' ,flexShrink: 0 }}
       />
       <button onClick={handleAsk} style={{ marginBottom: '8px' }}>Ask</button>
 

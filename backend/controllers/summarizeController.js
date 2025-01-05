@@ -4,7 +4,8 @@ const externalApiService = require('../services/externalApiService');
 
 exports.summarize= async(req, res) => {
     try{
-        const summary = await externalApiService.summarizeText(req);
+        const { text } = req.body;
+        const summary = await externalApiService.summarizeText(text);
         return res.json({ success: true, summary });
     } catch (err) {
         console.error(err);
