@@ -59,4 +59,4 @@ jobs:
           app-name: 'troubleshooting-assist'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6C2F89B10E0432696B49C5015DFEE66 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F6BD18678CFF4ECFABFD8008A93AEA69 }}
