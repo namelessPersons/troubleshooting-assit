@@ -20,6 +20,16 @@ export async function askDocument(params) {
   return res.json();
 }
 
+export async function summarize(params) {
+  const res = await fetch(`${API_BASE}/api/summarize`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params),
+    credentials: 'include'
+  });
+  return res.json();
+}
+
 export async function listWorkInstructions() {
   const res = await fetch(`${API_BASE}/api/workinstructions`, {
     method: 'GET',

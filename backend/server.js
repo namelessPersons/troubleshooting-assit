@@ -6,6 +6,7 @@ const session = require('cookie-session');
 const authRoutes = require('./routes/auth');
 const docRoutes = require('./routes/documents');
 const wiRoutes = require('./routes/workinstructions');
+const summarizeRotes = require('./routes/summarize');
 require('dotenv').config();
 
 const app = express();
@@ -22,6 +23,7 @@ app.use(session({
 app.use('/api', authRoutes);
 app.use('/api/documents', docRoutes);
 app.use('/api/workinstructions', wiRoutes);
+app.use('/api/summarize',summarizeRotes)
 
 // フロントエンド成果物
 app.use(express.static(path.join(__dirname, '../dist')));

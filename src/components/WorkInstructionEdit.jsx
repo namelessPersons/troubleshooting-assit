@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { saveWorkInstruction, generatePdf } from '../../src/services/api';
-import { summarizeText } from '../../backend/services/externalApiService';
+import { saveWorkInstruction, generatePdf,summarize } from '../../src/services/api';
 
 function handleAutoScroll(e, containerRef) {
   if (!containerRef.current) return;
@@ -91,7 +90,9 @@ export default function WorkInstructionEdit({ instruction, onUpdate }) {
 
       if (dropped.sourceType === 'ANSWER') {
         // Summarize
-        const summary = await summarizeText(dropped.text);
+        const response = await summarize({ text: dropped.text });
+        const { summary } =response;
+      
         job.items.push({
           id: `item-${Date.now()}`,
           title: summary,

@@ -3,6 +3,8 @@
 // Node.js v22 以降ならグローバル fetch が使えます。
 // サブスクリプションキー等は本番環境で安全に管理してください。
 
+require('dotenv').config();
+
 const ENDPOINT_URL = 'https://aibot-apim-uat-jpe.azure-api.net/satori-uat/DocumentQueryWithAnswer';
 const SUBSCRIPTION_KEY = process.env.SUBSCRIPTION_KEY;
 
